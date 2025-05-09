@@ -90,12 +90,12 @@
             this.delivered,
             this.cancelled});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 29);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 26);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(10);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1891, 812);
+            this.dataGridView1.Size = new System.Drawing.Size(1864, 815);
             this.dataGridView1.TabIndex = 2;
             // 
             // name

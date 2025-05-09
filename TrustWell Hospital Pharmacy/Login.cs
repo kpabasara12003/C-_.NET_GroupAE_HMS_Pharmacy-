@@ -18,6 +18,7 @@ namespace TrustWell_Hospital_Pharmacy
         public Login()
         {
             InitializeComponent();
+            button2.Click += new EventHandler(button2_Click);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -25,7 +26,22 @@ namespace TrustWell_Hospital_Pharmacy
 
         }
 
-        private void Login_MouseClick(object sender, MouseEventArgs e)
+        //private void Login_MouseClick(object sender, MouseEventArgs e)
+        //{
+           
+        //}
+        private void LogUserActivity(string staffId)
+        {
+            string activityQuery = "INSERT INTO login_activity (application, login_time, StaffID) VALUES ('Pharmacy', NOW(), @StaffID)";
+            MySqlParameter[] parameters =
+            {
+         new MySqlParameter("@StaffID", staffId)
+     };
+
+            Database.ExecuteNonQuery(activityQuery, parameters);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             string email = textBox1.Text.Trim();
             string password = textBox2.Text;
@@ -86,16 +102,6 @@ namespace TrustWell_Hospital_Pharmacy
             {
                 MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-        private void LogUserActivity(string staffId)
-        {
-            string activityQuery = "INSERT INTO login_activity (application, login_time, StaffID) VALUES ('Pharmacy', NOW(), @StaffID)";
-            MySqlParameter[] parameters =
-            {
-         new MySqlParameter("@StaffID", staffId)
-     };
-
-            Database.ExecuteNonQuery(activityQuery, parameters);
         }
     }
 }
