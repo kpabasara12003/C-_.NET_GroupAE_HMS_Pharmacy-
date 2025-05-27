@@ -19,7 +19,7 @@ namespace TrustWell_Hospital_Pharmacy
         public Home()
         {
             InitializeComponent();
-            dateTimeDisplay = new DateTimeDisplay(label1, lable2); // label1 = time, label2 = date
+            dateTimeDisplay = new DateTimeDisplay(label1, label6); // label1 = time, label2 = date
             LoadData();
         }
 
@@ -189,6 +189,26 @@ namespace TrustWell_Hospital_Pharmacy
                 timeLabel.Text = DateTime.Now.ToString("hh:mm tt");
                 dateLabel.Text = DateTime.Now.ToString("dd MMM yyyy");
             }
+        }
+
+        private void btnlogout_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cuiButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
