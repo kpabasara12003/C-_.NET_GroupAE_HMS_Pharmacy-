@@ -41,6 +41,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
+            // gunaLabel4
+            // 
+            gunaLabel4.AutoSize = true;
+            gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            gunaLabel4.Location = new System.Drawing.Point(104, 24);
+            gunaLabel4.Name = "gunaLabel4";
+            gunaLabel4.Size = new System.Drawing.Size(140, 28);
+            gunaLabel4.TabIndex = 3;
+            gunaLabel4.Text = "Patient Name:";
+            gunaLabel4.Click += new System.EventHandler(this.gunaLabel4_Click);
+            // 
+            // gunaLabel5
+            // 
+            gunaLabel5.AutoSize = true;
+            gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            gunaLabel5.Location = new System.Drawing.Point(105, 71);
+            gunaLabel5.Name = "gunaLabel5";
+            gunaLabel5.Size = new System.Drawing.Size(138, 28);
+            gunaLabel5.TabIndex = 4;
+            gunaLabel5.Text = "Doctor Name:";
+            // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
@@ -67,44 +88,27 @@
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Doctor Name :";
             // 
-            // gunaLabel4
-            // 
-            gunaLabel4.AutoSize = true;
-            gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            gunaLabel4.Location = new System.Drawing.Point(104, 24);
-            gunaLabel4.Name = "gunaLabel4";
-            gunaLabel4.Size = new System.Drawing.Size(140, 28);
-            gunaLabel4.TabIndex = 3;
-            gunaLabel4.Text = "Patient Name:";
-            gunaLabel4.Click += new System.EventHandler(this.gunaLabel4_Click);
-            // 
-            // gunaLabel5
-            // 
-            gunaLabel5.AutoSize = true;
-            gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            gunaLabel5.Location = new System.Drawing.Point(105, 71);
-            gunaLabel5.Name = "gunaLabel5";
-            gunaLabel5.Size = new System.Drawing.Size(138, 28);
-            gunaLabel5.TabIndex = 4;
-            gunaLabel5.Text = "Doctor Name:";
-            // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(831, 521);
+            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(966, 104);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 37);
+            this.button1.Size = new System.Drawing.Size(128, 44);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Delivered";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Deliver";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(148, 176);
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 151);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(628, 350);
+            this.richTextBox1.Size = new System.Drawing.Size(1106, 578);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
@@ -123,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 570);
+            this.ClientSize = new System.Drawing.Size(1106, 729);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(gunaLabel4);
             this.Controls.Add(gunaLabel5);
