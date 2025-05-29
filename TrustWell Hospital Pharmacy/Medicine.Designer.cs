@@ -96,10 +96,11 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 141);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 146);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1106, 526);
+            this.richTextBox1.Size = new System.Drawing.Size(1161, 583);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
@@ -117,7 +118,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(63)))), ((int)(((byte)(183)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(gunaLabel5);
             this.panel1.Controls.Add(this.gunaLabel3);
             this.panel1.Controls.Add(gunaLabel4);
@@ -126,7 +128,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1106, 146);
+            this.panel1.Size = new System.Drawing.Size(1161, 146);
             this.panel1.TabIndex = 7;
             // 
             // button1
@@ -134,15 +136,15 @@
             this.button1.AnimationHoverSpeed = 0.07F;
             this.button1.AnimationSpeed = 0.03F;
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BaseColor = System.Drawing.Color.Blue;
-            this.button1.BorderColor = System.Drawing.Color.Blue;
+            this.button1.BaseColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BorderColor = System.Drawing.Color.DodgerBlue;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.button1.FocusedColor = System.Drawing.Color.Empty;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = null;
             this.button1.ImageSize = new System.Drawing.Size(20, 20);
-            this.button1.Location = new System.Drawing.Point(925, 682);
+            this.button1.Location = new System.Drawing.Point(970, 104);
             this.button1.Name = "button1";
             this.button1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.button1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -159,10 +161,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 729);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1161, 729);
             this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "Medicine";
             this.Text = "Medicine";
             this.Load += new System.EventHandler(this.Medicine_Load);

@@ -196,8 +196,8 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(1416, 78);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(1419, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(271, 28);
             this.label4.TabIndex = 23;
@@ -209,8 +209,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(1411, 49);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(1415, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 28);
             this.label1.TabIndex = 22;
@@ -222,7 +222,7 @@
             this.cuiLabel1.BackColor = System.Drawing.Color.Transparent;
             this.cuiLabel1.Content = "TrustWell\\ Hospital";
             this.cuiLabel1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuiLabel1.ForeColor = System.Drawing.Color.Blue;
+            this.cuiLabel1.ForeColor = System.Drawing.Color.Black;
             this.cuiLabel1.HorizontalAlignment = System.Drawing.StringAlignment.Center;
             this.cuiLabel1.Location = new System.Drawing.Point(1341, 8);
             this.cuiLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -241,14 +241,14 @@
             this.cuiPictureBox1.Content = null;
             this.cuiPictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
-            this.cuiPictureBox1.Location = new System.Drawing.Point(1726, 0);
+            this.cuiPictureBox1.Location = new System.Drawing.Point(1735, 0);
             this.cuiPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cuiPictureBox1.Name = "cuiPictureBox1";
             this.cuiPictureBox1.OutlineThickness = 1F;
             this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
             this.cuiPictureBox1.Rotation = 0;
             this.cuiPictureBox1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPictureBox1.Size = new System.Drawing.Size(176, 140);
+            this.cuiPictureBox1.Size = new System.Drawing.Size(167, 194);
             this.cuiPictureBox1.TabIndex = 20;
             // 
             // panel1
@@ -261,14 +261,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1902, 140);
+            this.panel1.Size = new System.Drawing.Size(1902, 194);
             this.panel1.TabIndex = 24;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
