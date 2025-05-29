@@ -18,7 +18,7 @@ namespace TrustWell_Hospital_Pharmacy
         public Login()
         {
             InitializeComponent();
-            button2.Click += new EventHandler(button2_Click);
+            button1.Click += new EventHandler(button1_Click);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace TrustWell_Hospital_Pharmacy
             Database.ExecuteNonQuery(activityQuery, parameters);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             string email = textBox1.Text.Trim();
             string password = textBox2.Text;

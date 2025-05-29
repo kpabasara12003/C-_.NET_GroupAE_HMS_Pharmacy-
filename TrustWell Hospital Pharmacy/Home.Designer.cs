@@ -42,12 +42,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cuiButton1 = new CuoreUI.Controls.cuiButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cuiButton1 = new Guna.UI.WinForms.GunaButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
@@ -230,47 +230,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "time";
             // 
-            // cuiButton1
-            // 
-            this.cuiButton1.BackColor = System.Drawing.Color.Transparent;
-            this.cuiButton1.CheckButton = false;
-            this.cuiButton1.Checked = false;
-            this.cuiButton1.CheckedBackground = System.Drawing.Color.Navy;
-            this.cuiButton1.CheckedForeColor = System.Drawing.Color.Black;
-            this.cuiButton1.CheckedImageTint = System.Drawing.Color.DimGray;
-            this.cuiButton1.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.cuiButton1.Content = "Log Out";
-            this.cuiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cuiButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.cuiButton1.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuiButton1.ForeColor = System.Drawing.Color.Black;
-            this.cuiButton1.HoverBackground = System.Drawing.Color.AliceBlue;
-            this.cuiButton1.HoveredImageTint = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.cuiButton1.HoverForeColor = System.Drawing.Color.MidnightBlue;
-            this.cuiButton1.HoverOutline = System.Drawing.Color.Navy;
-            this.cuiButton1.Image = null;
-            this.cuiButton1.ImageAutoCenter = true;
-            this.cuiButton1.ImageExpand = new System.Drawing.Point(0, 0);
-            this.cuiButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.cuiButton1.Location = new System.Drawing.Point(3, 151);
-            this.cuiButton1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
-            this.cuiButton1.Name = "cuiButton1";
-            this.cuiButton1.NormalBackground = System.Drawing.Color.LavenderBlush;
-            this.cuiButton1.NormalForeColor = System.Drawing.Color.Black;
-            this.cuiButton1.NormalImageTint = System.Drawing.Color.White;
-            this.cuiButton1.NormalOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cuiButton1.OutlineThickness = 1F;
-            this.cuiButton1.PressedBackground = System.Drawing.Color.WhiteSmoke;
-            this.cuiButton1.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cuiButton1.PressedImageTint = System.Drawing.Color.White;
-            this.cuiButton1.PressedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cuiButton1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiButton1.Size = new System.Drawing.Size(200, 46);
-            this.cuiButton1.TabIndex = 15;
-            this.cuiButton1.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.cuiButton1.TextOffset = new System.Drawing.Point(0, 0);
-            this.cuiButton1.Click += new System.EventHandler(this.cuiButton1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -323,6 +282,33 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "trustwellhospitalspharmacy@gmail.com";
             // 
+            // cuiButton1
+            // 
+            this.cuiButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cuiButton1.AnimationHoverSpeed = 0.07F;
+            this.cuiButton1.AnimationSpeed = 0.03F;
+            this.cuiButton1.BaseColor = System.Drawing.Color.Blue;
+            this.cuiButton1.BorderColor = System.Drawing.Color.Black;
+            this.cuiButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.cuiButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.cuiButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuiButton1.ForeColor = System.Drawing.Color.White;
+            this.cuiButton1.Image = null;
+            this.cuiButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.cuiButton1.Location = new System.Drawing.Point(22, 140);
+            this.cuiButton1.Name = "cuiButton1";
+            this.cuiButton1.OnHoverBaseColor = System.Drawing.SystemColors.Highlight;
+            this.cuiButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.cuiButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.cuiButton1.OnHoverImage = null;
+            this.cuiButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.cuiButton1.Radius = 10;
+            this.cuiButton1.Size = new System.Drawing.Size(208, 50);
+            this.cuiButton1.TabIndex = 11;
+            this.cuiButton1.Text = "Log Out";
+            this.cuiButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cuiButton1.Click += new System.EventHandler(this.cuiButton1_Click_1);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -330,8 +316,9 @@
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.panel2);
             this.Name = "Home";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel2.ResumeLayout(false);
@@ -358,8 +345,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
-        private CuoreUI.Controls.cuiButton cuiButton1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Guna.UI.WinForms.GunaButton cuiButton1;
     }
 }

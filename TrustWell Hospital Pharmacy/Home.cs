@@ -133,13 +133,6 @@ namespace TrustWell_Hospital_Pharmacy
 
         private void cuiButton1_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                this.Hide();
-                Login login = new Login();
-                login.Show();
-            }
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
@@ -170,6 +163,17 @@ namespace TrustWell_Hospital_Pharmacy
             {
                 timeLabel.Text = DateTime.Now.ToString("hh:mm tt");
                 dateLabel.Text = DateTime.Now.ToString("dd MMM yyyy");
+            }
+        }
+
+        private void cuiButton1_Click_1(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.Show();
             }
         }
     }
