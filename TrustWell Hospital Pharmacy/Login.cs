@@ -18,7 +18,7 @@ namespace TrustWell_Hospital_Pharmacy
         public Login()
         {
             InitializeComponent();
-            button1.Click += new EventHandler(button1_Click);
+          
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -26,22 +26,26 @@ namespace TrustWell_Hospital_Pharmacy
 
         }
 
-        //private void Login_MouseClick(object sender, MouseEventArgs e)
-        //{
-           
-        //}
+       
         private void LogUserActivity(string staffId)
         {
-            string activityQuery = "INSERT INTO login_activity (application, login_time, StaffID) VALUES ('Pharmacy', NOW(), @StaffID)";
-            MySqlParameter[] parameters =
+            try
             {
-         new MySqlParameter("@StaffID", staffId)
-     };
+                string activityQuery = "INSERT INTO login_activity (application, login_time, StaffID) VALUES ('Pharmacy', NOW(), @StaffID)";
+                MySqlParameter[] parameters =
+                {
+                new MySqlParameter("@StaffID", staffId)
+            };
 
-            Database.ExecuteNonQuery(activityQuery, parameters);
+                Database.ExecuteNonQuery(activityQuery, parameters);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to log: " + ex.Message, "Logging Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_MouseClick(object sender, MouseEventArgs e)
         {
             string email = textBox1.Text.Trim();
             string password = textBox2.Text;
@@ -51,7 +55,11 @@ namespace TrustWell_Hospital_Pharmacy
                 MessageBox.Show("Please enter both email and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            if (password.Length < 6 || password.Length > 9)
+            {
+                MessageBox.Show("Password must be between 6 and 9 characters long.", "Invalid Password Length", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             try
             {
                 MySqlParameter[] parameters =
@@ -98,10 +106,21 @@ namespace TrustWell_Hospital_Pharmacy
                     MessageBox.Show("Invalid email or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            catch (NullReferenceException nullEx)
+            {
+                MessageBox.Show("Unexpected null value: " + nullEx.Message, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (FormatException formatEx)
+            {
+                MessageBox.Show("Data formats are failed: " + formatEx.Message, "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
+
+      
     }
 }

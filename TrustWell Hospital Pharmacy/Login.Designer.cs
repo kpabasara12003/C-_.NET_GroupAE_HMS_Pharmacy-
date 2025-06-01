@@ -94,6 +94,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Sign In";
             this.button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label7
             // 
@@ -120,7 +121,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.textBox2.PasswordChar = '\0';
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Radius = 12;
             this.textBox2.SelectedText = "";
             this.textBox2.Size = new System.Drawing.Size(351, 45);
@@ -241,14 +242,14 @@
             this.cuiPictureBox1.Content = null;
             this.cuiPictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
-            this.cuiPictureBox1.Location = new System.Drawing.Point(1735, 0);
+            this.cuiPictureBox1.Location = new System.Drawing.Point(1736, 0);
             this.cuiPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cuiPictureBox1.Name = "cuiPictureBox1";
             this.cuiPictureBox1.OutlineThickness = 1F;
             this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
             this.cuiPictureBox1.Rotation = 0;
             this.cuiPictureBox1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPictureBox1.Size = new System.Drawing.Size(167, 194);
+            this.cuiPictureBox1.Size = new System.Drawing.Size(166, 149);
             this.cuiPictureBox1.TabIndex = 20;
             // 
             // panel1
@@ -261,7 +262,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1902, 194);
+            this.panel1.Size = new System.Drawing.Size(1902, 149);
             this.panel1.TabIndex = 24;
             // 
             // Login

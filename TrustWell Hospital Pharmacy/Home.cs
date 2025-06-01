@@ -8,18 +8,19 @@ namespace TrustWell_Hospital_Pharmacy
 {
     public partial class Home : Form
     {
-        private DateTimeDisplay dateTimeDisplay;
+        DateTimeUpdater dateTime1 = new DateTimeUpdater();
         private bool columnsAdded = false;
 
         public Home()
         {
             InitializeComponent();
-            dateTimeDisplay = new DateTimeDisplay(label1, label6); // label1 = time, label6 = date
+           
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
             LoadData();
+            dateTime1.StartDateTimeClock(label1, label6);
         }
 
         private void LoadData()
@@ -39,18 +40,16 @@ namespace TrustWell_Hospital_Pharmacy
             DataTable dt = Database.ExecuteQuery(query, null);
             gunaDataGridView1.DataSource = dt;
 
-            // Hide the internal ID column
+           
             if (gunaDataGridView1.Columns.Contains("medicalresID"))
                 gunaDataGridView1.Columns["medicalresID"].Visible = false;
 
-            // Update column headers for readability
             if (gunaDataGridView1.Columns.Contains("PatientName"))
                 gunaDataGridView1.Columns["PatientName"].HeaderText = "Patient's Name";
 
             if (gunaDataGridView1.Columns.Contains("ContactNumber"))
                 gunaDataGridView1.Columns["ContactNumber"].HeaderText = "Contact Number";
 
-            // Prevent adding duplicate columns on every data load
             if (!columnsAdded)
             {
                 gunaDataGridView1.Columns.Add(new DataGridViewButtonColumn
@@ -140,29 +139,21 @@ namespace TrustWell_Hospital_Pharmacy
             LoadData();
         }
 
-        public class DateTimeDisplay
+        public class DateTimeUpdater
         {
             private Timer timer;
-            private Label timeLabel;
-            private Label dateLabel;
 
-            public DateTimeDisplay(Label timeLabel, Label dateLabel)
+            public void StartDateTimeClock(Label Time, Label Date)
             {
-                this.timeLabel = timeLabel;
-                this.dateLabel = dateLabel;
-
-                timer = new Timer
+                timer = new Timer();
+                timer.Interval = 1000;
+                timer.Tick += (s, e) =>
                 {
-                    Interval = 1000
+              
+                    Time.Text = DateTime.Now.ToString("hh:mm tt");
+                    Date.Text = DateTime.Now.ToString("yyyy-MM-dd");
                 };
-                timer.Tick += Timer_Tick;
                 timer.Start();
-            }
-
-            private void Timer_Tick(object sender, EventArgs e)
-            {
-                timeLabel.Text = DateTime.Now.ToString("hh:mm tt");
-                dateLabel.Text = DateTime.Now.ToString("dd MMM yyyy");
             }
         }
 
